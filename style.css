@@ -1,8 +1,13 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: Roboto, Oxygen, Ubuntu, Cantarell;
   --header-height: 40px;
   --footer-height: 60px;
+  --font-size-default: 15px;
   --color1-antique-white: antiquewhite;
   --color2-dark-grey: #444;
   text-align: center;
@@ -24,6 +29,7 @@ body {
 }
 
 .main {
+  font-size: calc(var(--header-height) - 25px);
   text-align: center;
   padding: 20px;
   min-height: calc(100vh - var(--header-height) - var(--footer-height));
@@ -100,4 +106,9 @@ a:hover {
  
 a:active {
   color: red;
+}
+
+.a-navigation-footer {
+  color: var(--color2-dark-grey);
+  padding-bottom: 5px;
 }
